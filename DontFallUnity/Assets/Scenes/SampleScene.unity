@@ -755,10 +755,8 @@ MonoBehaviour:
     areaError: 15
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges:
-  - x: 4
-    y: 3
-  m_selectedTriangles: 0400000003000000
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!33 &80007058
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1058,6 +1056,120 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!1 &267600379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267600385}
+  - component: {fileID: 267600384}
+  - component: {fileID: 267600383}
+  - component: {fileID: 267600382}
+  - component: {fileID: 267600381}
+  - component: {fileID: 267600380}
+  m_Layer: 9
+  m_Name: Player (1)
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &267600380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267600379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1b812801995154eb02ca731407da41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!54 &267600381
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267600379}
+  serializedVersion: 2
+  m_Mass: 0.25
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!135 &267600382
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267600379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &267600383
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267600379}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &267600384
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267600379}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &267600385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267600379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.94, y: -1.7579, z: 22.99}
+  m_LocalScale: {x: 2.3039474, y: 2.3039474, z: 2.3039474}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279996381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3246,10 +3358,8 @@ MonoBehaviour:
     areaError: 15
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges:
-  - x: 4
-    y: 3
-  m_selectedTriangles: 0400000003000000
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!33 &518632249
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3338,7 +3448,6 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
-  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -3400,24 +3509,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 26.584997, z: 32.325}
+  m_LocalPosition: {x: -0.92, y: 26.87, z: 33.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &534669906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c81a8db0d53aaad4c801832d092d659f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 681242511}
 --- !u!43 &581247006
 Mesh:
   m_ObjectHideFlags: 0
@@ -4135,7 +4232,7 @@ Transform:
   m_GameObject: {fileID: 611312842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.62, y: -10.202768, z: 33.44}
-  m_LocalScale: {x: 1.0288628, y: 1.0288628, z: 1.0288628}
+  m_LocalScale: {x: 1.5250227, y: 1.5250227, z: 1.5250227}
   m_Children:
   - {fileID: 1048419780}
   - {fileID: 80007061}
@@ -4235,7 +4332,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681242511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3696, y: -1.7579, z: 34.646}
+  m_LocalPosition: {x: -3.19, y: -1.7579, z: 41.57}
   m_LocalScale: {x: 2.3039474, y: 2.3039474, z: 2.3039474}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4267,7 +4364,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &708760526
 GameObject:
   m_ObjectHideFlags: 0
@@ -7076,10 +7173,8 @@ MonoBehaviour:
     areaError: 15
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges:
-  - x: 4
-    y: 3
-  m_selectedTriangles: 0400000003000000
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!33 &1049736084
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10104,10 +10199,8 @@ MonoBehaviour:
     areaError: 15
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges:
-  - x: 4
-    y: 3
-  m_selectedTriangles: 0400000003000000
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!33 &1624395414
 MeshFilter:
   m_ObjectHideFlags: 0
